@@ -4,15 +4,24 @@
   "description": "",
   "scripts": {
     "start": "parcel src/index.html --port 8080",
-    "build": "parcel build src/index.html ",
+    "build": "parcel build src/index.html --public-url ./",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SofiiaBondarenko/json_hw_8.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SofiiaBondarenko/json_hw_8/issues"
+  },
+  "homepage": "https://github.com/SofiiaBondarenko/json_hw_8#readme",
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "parcel": "^2.16.4"
   }
 }
